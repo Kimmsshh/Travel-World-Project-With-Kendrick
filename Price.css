@@ -1,0 +1,130 @@
+/* NAVBAR */
+.navbar {
+ position: fixed;
+ top: 0;
+ width: 98%;
+ padding: 15px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background: rgba(0, 150, 200, 0.3); /* transparan */
+ backdrop-filter: blur(10px); /* glass effect */
+ -webkit-backdrop-filter: blur(10px);
+}
+/* LOGO */
+.logo {
+ font-size: 1.5rem;
+ font-weight: bold;
+ color: white;
+}
+.logo span {
+ color: #00e0ff; /* aksen laut */
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+
+/* MENU */
+.nav-links {
+ list-style: none;
+ display: flex;
+ gap: 30px;
+}
+.nav-links li a {
+ text-decoration: none;
+ color: white;
+ font-weight: 500;
+ position: relative;
+ transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.nav-links li a::after {
+ content: "";
+ position: absolute;
+ width: 0%;
+ height: 2px;
+ left: 0;
+ bottom: -5px;
+ background: #00e0ff;
+ transition: 0.3s;
+}
+.nav-links li a:hover::after {
+ width: 100%;
+}
+.nav-links li a:hover {
+ color: #00e0ff;
+}
+/* Full BG */
+body {
+ margin: 0;
+ font-family: 'Poppins', sans-serif;
+ background: rgba(0, 150, 200, 0.3); /* transparan */
+ backdrop-filter: blur(10px); /* glass effect */
+ -webkit-backdrop-filter: blur(10px);
+}
+
+
+
+/* PRICING */
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  width: 220px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: #0077ff;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #0077ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Main {
+ height: 70vh;
+ background:
+   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 150, 200, 0.5)),
+   url('Assets/puraulun.jpg');
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ color: whitesmoke;
+}
+
+.isi h1 {
+ font-size: 3.5rem;
+ margin-bottom: 10px;
+}
+.isi p {
+ font-size: 1.2rem;
+ margin-bottom: 20px;
+}
+
+
+.footer {
+    background: linear-gradient(to right, #0f9bff, #00c6ff); /* SAMA KAYAK NAVBAR */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
