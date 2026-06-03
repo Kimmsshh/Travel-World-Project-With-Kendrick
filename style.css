@@ -10,13 +10,19 @@
  background: rgba(0, 150, 200, 0.3); 
  backdrop-filter: blur(10px); 
  -webkit-backdrop-filter: blur(10px);
+ z-index: 1000;
 }
+
 /* LOGO */
 .logo {
  font-size: 1.5rem;
  font-weight: bold;
  color: white;
+ display: flex;
+ align-items: center;
+ gap: 10px;
 }
+
 .logo span {
  color: #00e0ff; 
 }
@@ -24,13 +30,16 @@
 .logo img{
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
+
 /* MENU */
 .nav-links {
  list-style: none;
  display: flex;
  gap: 30px;
 }
+
 .nav-links li a {
  text-decoration: none;
  color: white;
@@ -50,26 +59,28 @@
  background: #00e0ff;
  transition: 0.3s;
 }
+
 .nav-links li a:hover::after {
  width: 100%;
 }
+
 .nav-links li a:hover {
  color: #00e0ff;
 }
 
-/* Full BG */
+/* BODY */
 body {
  margin: 0;
  font-family: 'Poppins', sans-serif;
 }
 
-
-/* Home Main Menu */
+/* HOME MAIN */
 .Main {
  height: 100vh;
  background:
    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 150, 200, 0.5)),
    url('Assets/Raja\ ampat.jpg');
+
  background-size: cover;
  background-position: center;
  display: flex;
@@ -77,18 +88,21 @@ body {
  align-items: center;
  text-align: center;
  color: whitesmoke;
+ padding: 20px;
 }
 
+/* TEXT */
 .isi h1 {
  font-size: 3.5rem;
  margin-bottom: 10px;
 }
+
 .isi p {
  font-size: 1.2rem;
  margin-bottom: 20px;
 }
 
-/* BUTTON START */
+/* BUTTON */
 .btn {
  padding: 12px 25px;
  background: #00c6ff;
@@ -96,31 +110,107 @@ body {
  text-decoration: none;
  border-radius: 25px;
  transition: 0.3s;
+ display: inline-block;
 }
+
 .btn:hover {
  background: #10a3b7;
 }
-/* DESTINATION SECTION */
+
+/* DESTINATION */
 .destination {
  padding: 60px 20px;
  text-align: center;
  background: #f5f5f5;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-}
-
+/* FOOTER */
 .footer {
-    background: linear-gradient(to right, #0f9bff, #00c6ff); /* SAMA KAYAK NAVBAR */
+    background: linear-gradient(to right, #0f9bff, #00c6ff);
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+
+/* ===================================
+   MEDIA QUERIES
+=================================== */
+
+/* TABLET */
+@media screen and (max-width: 768px){
+
+  .navbar{
+    flex-direction: column;
+    padding: 15px 20px;
+    width: 95%;
+  }
+
+  .nav-links{
+    margin-top: 15px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .isi h1{
+    font-size: 2.5rem;
+  }
+
+  .isi p{
+    font-size: 1rem;
+  }
+
+  .btn{
+    padding: 10px 20px;
+  }
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 480px){
+
+  .navbar{
+    flex-direction: column;
+    width: 92%;
+    padding: 12px;
+  }
+
+  .logo{
+    font-size: 1.2rem;
+  }
+
+  .logo img{
+    width: 35px;
+    height: 35px;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .nav-links li a{
+    font-size: 14px;
+  }
+
+  .isi h1{
+    font-size: 2rem;
+  }
+
+  .isi p{
+    font-size: 0.9rem;
+  }
+
+  .btn{
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .footer{
+    font-size: 14px;
+    padding: 15px;
+  }
 }
