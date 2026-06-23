@@ -214,3 +214,56 @@ body {
     padding: 15px;
   }
 }
+
+/* POPUP */
+.popup{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+/* BOX LOGIN */
+.popup-content{
+    background: white;
+    width: 320px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* INPUT */
+.popup-content input{
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON LOGIN */
+.popup-content button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: deepskyblue;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* TOMBOL X */
+.close{
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}

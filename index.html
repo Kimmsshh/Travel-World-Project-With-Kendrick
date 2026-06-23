@@ -32,13 +32,44 @@
         <div class="isi">
             <h1>Explore Indonesia</h1>
             <p>Discover beautiful destinations and unforgettable experiences</p>
-            <a href="#explore" class="btn">Start Your Journey</a>
+
+            <!-- Tombol -->
+            <a href="#" class="btn" onclick="openPopup()">
+                Start Your Journey
+            </a>
+
         </div>
     </section>
+
+    <!-- POPUP LOGIN -->
+    <div id="loginPopup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closePopup()">
+                &times;
+            </span>
+
+            <h2>Login</h2>
+
+            <input type="text" id="username" placeholder="Username">
+
+            <input type="password" id="password" placeholder="Password">
+
+            <button onclick="login()">
+                Masuk
+            </button>
+
+        </div>
+
+    </div>
 
     <footer class="footer">
         <p>© 2026 Ken Travel</p>
     </footer>
+
+    
+    <script src="page1.js"></script>
 
 </body>
 </html>
