@@ -1,15 +1,15 @@
 function openPopup() {
-    document.getElementById("loginPopup").style.display = "block";
+    $("#loginPopup").fadeIn();
 }
 
 function closePopup() {
-    document.getElementById("loginPopup").style.display = "none";
+    $("#loginPopup").fadeOut();
 }
 
 function login() {
 
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
+    let username = $("#username").val();
+    let password = $("#password").val();
 
     if(username != "" && password != "") {
         alert("Login berhasil!");
